@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { JournalEntry } from "../journal/journal_entry";
 
 @Component({
   selector: 'app-entry-list',
@@ -7,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class EntryListComponent implements OnInit {
 
-  @Input() entries!: any[];
+  @Input() entries!: JournalEntry[];
   constructor() { }
 
   ngOnInit(): void {

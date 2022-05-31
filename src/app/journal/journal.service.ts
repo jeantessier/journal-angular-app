@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { JOURNAL } from './mock-journal';
+import { Journal } from "./journal";
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +8,6 @@ import { Injectable } from '@angular/core';
 export class JournalService {
 
   constructor() { }
+
+  getJournal(): Journal { return JOURNAL; }
 }
