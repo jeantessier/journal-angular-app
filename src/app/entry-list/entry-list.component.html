@@ -1,4 +1,4 @@
 <article *ngFor="let entry of entries">
   <h2 [id]="entry.date" [innerHTML]="entry.pretty_date"></h2>
-  <section [innerHTML]="entry.body"></section>
+  <section [innerHTML]="entry.body | showdown"></section>
 </article>
