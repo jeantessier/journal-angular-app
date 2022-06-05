@@ -14,7 +14,14 @@ import { EntryListComponent } from './entry-list/entry-list.component';
   ],
   imports: [
     BrowserModule,
-    ShowdownModule
+    ShowdownModule.forRoot({
+      emoji: true,
+      ghCodeBlocks: true,
+      openLinksInNewWindow: true,
+      splitAdjacentBlockquotes: true,
+      strikethrough: true,
+      tables: true,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
